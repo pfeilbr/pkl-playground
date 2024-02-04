@@ -1,7 +1,6 @@
 ---
 tags:
     - config
-    - language
 ---
 
 # pkl-playground
