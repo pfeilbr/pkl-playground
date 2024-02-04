@@ -1,3 +1,9 @@
+---
+tags:
+    - config
+    - language
+---
+
 # pkl-playground
 
 learn [Pkl](https://pkl-lang.org/index.html), configuration that is Programmable, Scalable, and Safe
