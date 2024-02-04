@@ -1,11 +1,12 @@
 ---
 tags:
-    - config
+  - config
+  - language
 ---
 
 # pkl-playground
 
-learn [Pkl](https://pkl-lang.org/index.html), configuration that is programmable, Scalable, and Safe
+learn [Pkl](https://pkl-lang.org/index.html), configuration that is programmable, scalable, and Safe
 
 ## demo
 
