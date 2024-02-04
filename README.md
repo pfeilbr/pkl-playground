@@ -11,16 +11,7 @@ learn [Pkl](https://pkl-lang.org/index.html), configuration that is Programmable
 pkl --version
 
 FILE=config.pkl
-
-cat <<'EOF' > $FILE
-name = "Pkl: Configure your Systems in New Ways"
-attendants = 100
-isInteractive = true
-amountLearned = 13.37
-EOF
-
 pkl eval $FILE
-
 pkl eval --format json $FILE 
 pkl eval --format yaml $FILE 
 ```

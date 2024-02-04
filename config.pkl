@@ -2,3 +2,101 @@ name = "Pkl: Configure your Systems in New Ways"
 attendants = 100
 isInteractive = true
 amountLearned = 13.37
+
+// commented out becasue it breaks json, yaml outputs which doesn't support all
+// the types
+// mixedObject {
+//   name = "Pigeon"
+//   lifespan = 8
+//   "wing"
+//   "claw"
+//   ["wing"] = "Not related to the _element_ \"wing\""
+//   42
+//   extinct = false
+//   [false] {
+//     description = "Construed object example"
+//   }
+// }
+
+// list
+birds { 
+  "Pigeon"
+  "Parrot"
+  "Barn owl"
+  "Falcon"
+}
+
+// zero based indexing
+relatedToSnowOwl = birds[2]
+
+// mapping
+habitats { 
+  ["Pigeon"] = "Streets"
+  ["Parrot"] = "Parks"
+  ["Barn owl"] = "Forests"
+  ["Falcon"] = "Mountains"
+}
+
+// ammedning
+bird {
+  name = "Pigeon"
+  diet = "Seeds"
+  taxonomy {
+    kingdom = "Animalia"
+    clade = "Dinosauria"
+    order = "Columbiformes"
+  }
+}
+
+parrot = (bird) {
+  name = "Parrot"
+  diet = "Berries"
+  taxonomy {
+    order = "Psittaciformes"
+  }
+}
+
+// nested ammending
+woodPigeon {
+  name = "Common wood pigeon"
+  diet = "Seeds"
+  taxonomy {
+    species = "Columba palumbus"
+  }
+}
+
+stockPigeon = (woodPigeon) {
+  name = "Stock pigeon"
+  taxonomy {
+    species = "Columba oenas"
+  }
+}
+
+dodo = (stockPigeon) {
+  name = "Dodo"
+  extinct = true
+  taxonomy {
+    species = "Raphus cucullatus"
+  }
+}
+
+// ammed elements and entries
+// favoriteFoods {
+//   "red berries"
+//   "blue berries"
+//   ["Barn owl"] {
+//     "mice"
+//   }
+// }
+
+// adultBirdFoods = (favoriteFoods) {
+//   [1] = "pebbles"
+//   "worms"
+//   ["Falcon"] {
+//     "insects"
+//     "amphibians"
+//   }
+//   ["Barn owl"] {
+//     "fish"
+//   }
+// }
